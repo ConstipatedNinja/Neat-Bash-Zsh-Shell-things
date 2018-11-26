@@ -1,0 +1,8 @@
+# Tired of accidentally trying to cd to /path/to/file/ls or /path/to/file/filename.ext when you just wanted to go to /path/to/file/ ? Well this function is for you!
+function cd()
+{
+        if [ ! -d "$1" ]; then
+                1=`dirname "$1"`
+        fi
+builtin cd "$@"
+}
