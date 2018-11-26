@@ -1,0 +1,6 @@
+Host github.com
+    User git
+    Hostname github.com
+    IdentityFile ~/.ssh/<YOUR PRIVATE KEY HERE>
+    IdentitiesOnly yes
+    ProxyCommand connect-proxy -S PROXY-SERVER:PROXY-PORT %h %p
